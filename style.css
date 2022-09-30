@@ -1,0 +1,63 @@
+html,body{
+    height:100%;
+    margin:0;
+    font-family: "Times New Roman", Times, serif;
+    background-color: #2f9452;
+    }
+header{
+    background-color: #2f9452;
+    font-size: 50px;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+.fejlec{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    font-size:28px;
+    background-color: #2f9452;    
+}
+.fent:link, .fent:visited{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin-left:5px;
+    margin-right:5px;
+    background-color: #2f9452;
+    }
+.fent:hover, .fent:active{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin-left:5px;
+    margin-right:5px;
+    background-color: #257441;
+    }
+.grid-container {
+    background-color: #1866a5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows:auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    position: relative;
+}
+img{
+    max-width: 500px;
+    float: none;
+}
+button{
+    float:initial;
+    background-color: rgb(43, 255, 0);
+    opacity: 0.8;
+}
+button:hover{
+    background-color: red;
+    opacity: 1;
+}
+.fname{
+    float: right;
+}
