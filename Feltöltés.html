@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
@@ -8,10 +9,13 @@
     <title>Autó feltöltés</title>
 </head>
     <nav>
-        <a href="Index.html" class="fent">Főoldal</a>
-        <a href="Profil.html" class="fent">Profil</a>
-        <a href="Feltöltés.html" class="fent">Autó feltöltés</a>
-            <input type="button" id="belepes" name="belepes" value="Kijelentkezés">
+        <div class="topnav">
+            <a href="Index.html">Főoldal</a>
+            <a href="Profil.html">Profil</a>
+            <a class="active" href="Feltöltés.html">Feltöltés</a>
+            <a href="#about">About</a>
+            <button class="kijelentkezes" id="belepes" name="belepes">Kijelentkezés</button>
+        </div>
     </nav>
 <body>
     <form>
@@ -24,11 +28,9 @@
         <input type="text" id="szin" placeholder="Szín" name="szin" required>
         <input type="file" id="kep" name="kép" accept="image/*"><br>
         <br>
-        <input type="button" id="bekuld" name="bekuld" value="Beküld">
+        <input class="kijelentkezes" type="button" id="bekuld" name="bekuld" value="Beküld">
 
     </form>
-
-
     <footer>
 
     </footer>

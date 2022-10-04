@@ -1,44 +1,23 @@
+<!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="ProfileStyle.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="Pictures/Icon.png">
     <title>Profil</title>
 </head>
 <nav>
-    <a href="Index.html" class="fent">Főoldal</a>
-    <a href="Profil.html" class="fent">Profil</a>
-    <a href="Feltöltés.html" class="fent">Autó feltöltés</a>
-        <input type="button" id="belepes" name="belepes" value="Kijelentkezés">
+    <div class="topnav">
+        <a href="Index.html">Főoldal</a>
+        <a class="active" href="Profil.html">Profil</a>
+        <a href="Feltöltés.html">Feltöltés</a>
+        <a href="#about">About</a>
+        <button class="kijelentkezes" id="belepes" name="belepes">Kijelentkezés</button>
+    </div>
 </nav>
 <body>
-    <div class="profile-item">
-        <img src="Pictures/ixM60.png" alt="BMW car">
-        <h1>BMW iX m60</h1>
-        <span id="start">-től </span><span id="end">-ig!</span>
-        <button type="button" onclick="alert('gyááá')">Adatlap</button>
-    </div>
-    <div class="profile-item">
-        <img src="Pictures/ixM60.png" alt="BMW car">
-        <h1>BMW iX m60</h1>
-        <span id="start">-től </span><span id="end">-ig!</span>
-        <button type="button" onclick="alert('gyááá')">Adatlap</button>
-    </div>
-    <div class="profile-item">
-        <img src="Pictures/ixM60.png" alt="BMW car">
-        <h1>BMW iX m60</h1>
-        <span id="start">-től </span><span id="end">-ig!</span>
-        <button type="button" onclick="alert('gyááá')">Adatlap</button>
-    </div>
-<footer>
 
-</footer>
 </body>
 </html>
-<script>
-    var d = new Date();
-    var n = d.getFullYear();
-    document.getElementById("year").innerHTML=n;
-</script>
