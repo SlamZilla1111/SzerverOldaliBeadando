@@ -1,94 +1,24 @@
 <!DOCTYPE HTML>
-<html lang="HU">
+<html lang="hu">
    <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width , initial-scale= 1.0">
-        <link rel="stylesheet" type="text/css" href="reg.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="image/png" href="Pictures/Icon.png">
+        <title>Regisztráció</title>
    </head>
+   <nav>
+    <div class="topnav">
+        <a href="Index.html">Főoldal</a>
+        <a href="Profil.html">Profil</a>
+        <a href="Feltöltés.html">Feltöltés</a>
+        <a class="active" href="Register.html">Regisztráció</a>
+        <button class="kijelentkezes" id="belepes" name="belepes">Kijelentkezés</button>
+    </div>
+</nav>
    <body>
-        <style>
-            *
-{
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Popins', sans-serif;
-    box-sizing: border-box;
-    outline: none;
-    color: white;
-    scroll-behavior: smooth;
-}
-
-.reg
-{
-    position: absolute;
-    top:20%;
-    left: 20%;
-
-}
-
-.reg input
-{
-    text-align: left;
-    height: 50px;
-    width: 400px;
-    margin: 10px;
-    border: 2px solid black;
-    border-radius:  4px;
-    color: black;
-    font-size: large;
-    font-weight: bold;
-}
-
-.reg  form input::placeholder
-{
-    font-weight: lighter;
-    width: 100%;
-    color: black;
-    font-size: 18px;
-}
-.reg button
-{
-    left: 10px;
-    position: absolute;
-    width: 150px;
-    color: blue;
-    height: 50px;
-    font-weight: bold;
-    cursor: pointer;
-}
-.reg .asd label
-{
-    color: black;
-    font-size: large;
-    font-weight: bold;
-}
-.reg .asd form input
-{
-    width:  20px;
-    margin-left: 450px;
-}
-h3
-{
-    
-    text-align: left;
-    border: 2px solid black;
-    border-radius: 4px;
-    padding-top:5px;
-    color: black;
-}
-
-h3 span
-{
-    text-decoration:underline;
-    font-size: larger;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: black;
-    cursor: pointer;
-}
-        </style>
-
-        <div  class="reg">
+        <div  class="uploadbox">
             <form>
                 <input type="text" id="veznev" name="veznev" placeholder="Vezetéknév">
                 <input type="text" id="kernev" name="kernev" placeholder="Keresztnév"><br>
@@ -100,15 +30,11 @@ h3 span
                 <input type="text" id="jelszo2" name="jelszo2" placeholder="Jelszó megerősítés"><br>
                 <input type="text" id="telszam" name="telszam" placeholder="Telefonszám">
                 <input type="text" id="jogsi" name="jogsi" placeholder="Jogosítvány Azonosító "><br>
-            </form>
-            <div class="asd">
-                <button type="button">Elküld</button>
-            <form>
+                <input type="button" value="Elküld">
                 <input type="checkbox" id="adat" name="adat">
-                <label  for="adat">Elfogadom a  felhasználási feltételeket.</label>
+                <label  for="adat" class="labelforcheckbox">Elfogadom a  felhasználási feltételeket.</label>
             </form>
-            </div>
-            <h3>Van már profilja? Lépjen be <span>itt!</span></h3>
+            <p>Van már profilja? Lépjen be <a href="Login.html">itt!</a></p>
         </div>
    </body> 
 </html>
