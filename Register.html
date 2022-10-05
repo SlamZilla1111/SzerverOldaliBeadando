@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html lang="HU">
+   <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale= 1.0">
+        <link rel="stylesheet" type="text/css" href="reg.css">
+   </head>
+   <body>
+        <style>
+            *
+{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Popins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+.reg
+{
+    position: absolute;
+    top:20%;
+    left: 20%;
+
+}
+
+.reg input
+{
+    text-align: left;
+    height: 50px;
+    width: 400px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius:  4px;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+
+.reg  form input::placeholder
+{
+    font-weight: lighter;
+    width: 100%;
+    color: black;
+    font-size: 18px;
+}
+.reg button
+{
+    left: 10px;
+    position: absolute;
+    width: 150px;
+    color: blue;
+    height: 50px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.reg .asd label
+{
+    color: black;
+    font-size: large;
+    font-weight: bold;
+}
+.reg .asd form input
+{
+    width:  20px;
+    margin-left: 450px;
+}
+h3
+{
+    
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 4px;
+    padding-top:5px;
+    color: black;
+}
+
+h3 span
+{
+    text-decoration:underline;
+    font-size: larger;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+        </style>
+
+        <div  class="reg">
+            <form>
+                <input type="text" id="veznev" name="veznev" placeholder="Vezetéknév">
+                <input type="text" id="kernev" name="kernev" placeholder="Keresztnév"><br>
+                <input type="text" id="varos" name="varos" placeholder="Város">
+                <input type="text" id="utca" name="utca" placeholder="Utca/Házszám"><br>
+                <input type="text" id="szul" name="szul" placeholder="Születési idő">
+                <input type="text" id="email" name="email" placeholder="E-mail cím"><br>
+                <input type="text" id="jelszo" name="jelszo" placeholder="Jelszó">
+                <input type="text" id="jelszo2" name="jelszo2" placeholder="Jelszó megerősítés"><br>
+                <input type="text" id="telszam" name="telszam" placeholder="Telefonszám">
+                <input type="text" id="jogsi" name="jogsi" placeholder="Jogosítvány Azonosító "><br>
+            </form>
+            <div class="asd">
+                <button type="button">Elküld</button>
+            <form>
+                <input type="checkbox" id="adat" name="adat">
+                <label  for="adat">Elfogadom a  felhasználási feltételeket.</label>
+            </form>
+            </div>
+            <h3>Van már profilja? Lépjen be <span>itt!</span></h3>
+        </div>
+   </body> 
+</html>
