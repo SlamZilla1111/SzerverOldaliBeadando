@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="TermekGridview.css">
     <link rel="icon" type="image/png" href="Pictures/Icon.png">
     <title>Autó feltöltés</title>
 </head>
@@ -18,6 +19,7 @@
         </div>
     </nav>
 <body>
+    <div class="uploadbox">
     <form>
         <input type="text" id="gyarto" placeholder="Gyártó" name="gyarto" required>
         <input type="text" id="tipus" placeholder="Tipus" name="tipus" required>
@@ -25,12 +27,11 @@
         <input type="text" id="alvazszam" placeholder="Alvázszám" name="alvazszam" required>
         <input type="text" id="kapacitás" placeholder="Kapacitás" name="kapacitás" required>
         <input type="text" id="elerhetoseg" placeholder="Elérhetőség" name="elerhetoseg" required>
-        <input type="text" id="szin" placeholder="Szín" name="szin" required><br>
+        <input type="text" id="szin" placeholder="Szín" name="szin" required>
         <input type="file" id="kep" name="kép" accept="image/*">
-        <br>
         <input type="button" id="bekuld" name="bekuld" value="Beküld">
-
     </form>
+    </div>
     <footer>
 
     </footer>
