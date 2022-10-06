@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="TermekGridview.css">
+    <script src="sticky-header.js" defer></script>
     <link rel="icon" type="image/png" href="Pictures/Icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Profil</title>
 </head>
 <nav>
@@ -19,6 +21,47 @@
     </div>
 </nav>
 <body>
+
+<div class="user-data">
+    <table>
+        <tr>
+          <th>Vezetéknév</th>
+          <td>Tesztnév</td>
+        </tr>
+        <tr>
+          <th>Keresztnév</th>
+          <td>Sanyika</td>
+        </tr>
+        <tr>
+          <th>Város</th>
+          <td>Francisco</td>
+        </tr>
+        <tr>
+          <th>Utca/házszám</th>
+          <td>Nice u. 69.</td>
+        </tr>
+        <tr>
+          <th>Születési idő</th>
+          <td>1999.04.20.</td>
+        </tr>
+        <tr>
+          <th>E-mail cím</th>
+          <td>Yoshi@barát.hu</td>
+        </tr>
+        <tr>
+          <th>Jelszó</v>
+          <td><input type="password" value="69420xd" required="" id="id_password" class="passwordshow" readonly><i class="far fa-eye" id="togglePassword" style="cursor: pointer;"></i></td>
+        </tr>
+        <tr>
+            <th>Telefonszám</th>
+            <td>+362069696969</td>
+         </tr>
+          <tr>
+            <th>Jogosítvány azonosító</th>
+            <td>aa131121</td>
+          </tr>
+      </table>
+</div>
 
 
 <div class="stickyHeader" id="myHeader"><a href="#topnav" style="text-decoration: none;">Feltöltött autók</a></div>
@@ -99,26 +142,8 @@
 
 </div>
 </body>
+<footer>
+    <a target="_blank" href="https://icons8.com/icon/X9Cx8uz1dywz/uchiha-eyes">Uchiha Eyes</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    <a target="_blank" href="https://icons8.com/icon/6deTh43sfBTt/eyelashes-2d">Eyelashes 2D</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+</footer>
 </html>
-
-<script>
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {myFunction()};
-
-// Get the header
-var header = document.getElementById("myHeader");
-
-// Get the offset position of the navbar
-var sticky = header.offsetTop;
-
-// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-    header.classList.add("nomargin");
-  } else {
-    header.classList.remove("sticky");
-    header.classList.remove("nomargin");
-  }
-}
-</script>

@@ -140,6 +140,8 @@ a{
   text-decoration: none;
   color: #e2e6e0;
 }
+
+  /*-------------------------- Add a STYLE to the STICKY HEADER ------------------------------------------*/
 .stickyHeader{
   color: #e2e6e0;
   background-color: #354F52;
@@ -163,4 +165,46 @@ a{
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 10px;
+}
+
+  /*-------------------------- Add a STYLE to the SEARCH-BAR ------------------------------------------*/
+.search-bar{
+  padding: 14px 16px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: #354F52;
+  border-radius: 8px;
+}
+    /*-------------------------- Add a STYLE to the Pofile Data ------------------------------------------*/
+.user-data{
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+  color: #e2e6e0;
+  border-radius: 8px;
+}
+td, th {
+  border: 1px solid #354F52;
+  text-align: center;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #354F52;
+}
+.passwordshow{
+  border-radius: 8px;
+  text-align: center;
+  background-color: #354F52;
+  color: #e2e6e0;
+  transition: width 0.4s ease-in-out;
+  text-decoration: none;
+  border: none;
+  width: 30%;
+  padding: 10px;
+  min-width: fit-content;
 }
