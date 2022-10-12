@@ -208,8 +208,7 @@ tr:nth-child(even) {
   padding: 10px;
   min-width: fit-content;
 }
-
- /*-------------------------- Add a STYLE to the admin page ------------------------------------------*/ 
+/*-------------------------- Add a STYLE to the admin page ------------------------------------------*/ 
 .collapsible {
   background-color: #777;
   color: white;
