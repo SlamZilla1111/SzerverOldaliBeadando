@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="AutoProfil.css">
+    <link rel="stylesheet" href="TermekGridwievJavitott.css">
+    <script src="sticky-header.js" defer></script>
+    <link rel="icon" type="image/png" href="Pictures/Icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Profil</title>
+</head>
+<nav>
+    <div class="topnav" id="topnav">
+        <a href="Index.html">Főoldal</a>
+        <a href="Profil.html">Profil</a>   <!--Aktív kivéve-->
+        <a href="Feltöltés.html">Feltöltés</a>
+        <a href="Elozmenyek.html">Előzmények</a>
+      <!--<a href="Register.html">Regisztráció</a>Ezt kivettem , mert  ahozz  ,hogy regisztrálj ki kell jelentkezned.
+        Helyette az "Előzmények" kerül be-->
+        <button class="kijelentkezes" id="belepes" name="belepes">Kijelentkezés</button>
+    </div>
+</nav>
+<body>
+    <div class="Profil">
+        <div class="szoveg">
+            <h1 id="szoveg">TOYOTA C-HR</h1>
+        </div>
+            <div class="main">
+                <!----------------------------------------------Slideshow konténer----------------------------------------------->
+                <div class="slideshow-container" id="slide">
+                    <!-------------------------------------------------Képek--------------------------------------------------------------------------->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="ToyotaCHR.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="ToyotaCHR.jpg" style="width:100%">
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="ToyotaCHR.jpg" style="width:100%">
+                    </div>
+                    <!------------------------------------------Elöző és Utána--------------------------------------->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                <!-----------------------------------------------Pontok----------------------------------------------------->
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                </div>
+               
+                  
+                <!----------------------------------Slideshow scriptje---------------------------------->
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    // Next/previous controls
+                    function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                    }
+
+                    // Thumbnail image controls
+                    function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    }
+                </script>
+                <div class="adatok" id="adat">
+                    <!------Adatok  tábla-------->
+                    <table cellspacing="0" cellpadding="4" id="info">
+                        <tbody>
+                            <tr>
+                                <td>Gyártó:</td>
+                                <td>Toyota</td>
+                            </tr>
+                            <tr>
+                                <td>Modell:</td>
+                                <td>CH-R</td>
+                            </tr>
+                            <tr>
+                                <td>Kivitel:</td>
+                                <td>Terepjáró</td>
+                            </tr>
+                            <tr>
+                                <td>Gyártási év:</td>
+                                <td>2017</td>
+                            </tr>
+                            <tr>
+                                <td>Kapacitás:</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Váltó:</td>
+                                <td>Automata</td>
+                            </tr>
+                            <tr>
+                                <td>Üzemanyag:</td>
+                                <td>Hybrid</td>
+                            </tr>
+                            <!---Ha  nem elérhető  az autó akkor az adatok és kép sötétüljön be valamint legyen 
+                             rajta  egy szöveg , hogy:"Jelenleg nem  elérhető"-->
+                            <tr>
+                                <td>Szin:</td>
+                                <td>Fekete</td>
+                            </tr>
+                            <tr>
+                                <td>Leírás:</td>
+                                <td>Toyota C-HR crossover városi szabadidő autó. Autóbérlés külföldre is 
+                                    lehetséges!<br>Bérelje ki legújabb extravagáns dizájn autónkat a hosszú utazáshoz!
+                                    <br>A formabontó külső fantasztikus belső felszereltséget és komfortot takar,<br> hogy élmény 
+                                    legyen a vezetés.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!------------Bérlés--------------------------------------------------------------------------------->
+                <form class="berles">
+                    <fieldset>
+                     <legend>Foglalás</legend>
+                     <label for="kezd">Átvétel dátuma:</label>
+                     <input type="date" id="kezd" name="kezd"><br>
+                     <label for="vege">Leadása dátuma:</label>
+                     <input type="date" id="vege" name="vege"><br>
+                     <label for="cim" id="cimkeres">Kiszállítási cím megadása<span>(csak akkor , ha választott ilyen opciót.)</span></label><br>
+                     <input type="text" id="cim" name="cim">
+ 
+                    <div class="extra">
+                     <input type="checkbox" id="Kiszállítás" name="Kiszállítás" value="" class="pipa">
+                     <label for="Kiszállítás">Kiszállítás</label><br>
+                     <input type="checkbox" id="Gyermekülés" name="Gyermekülés" value="Gyermekülés" class="pipa">
+                     <label for="Gyermekülés">Gyermekülés</label><br>
+                     <input type="checkbox" id="Wifi" name="Wifi" value="Wifi" class="pipa">
+                     <label for="Wifi">Wifi</label><br>
+                     <input type="checkbox" id="Sofőr" name="Sofőr" value="Sofőr" class="pipa">
+                     <label for="Sofőr">Sofőr</label><br>
+                     <input type="checkbox" id="GPS navigáció" name="GPS navigáció" value="GPS navigáció" class="pipa">
+                     <label for="GPS navigáció">GPS navigáció</label><br>
+                    </div>
+                    <button type="submit" value="Lefoglalom" id="foglal">Lefoglalom</button>
+                    </fieldset>
+                </form>
+            </div>
+    </div>
+</body>
+</html>
