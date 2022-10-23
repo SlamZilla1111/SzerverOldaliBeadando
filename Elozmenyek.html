@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Elozmenyek.css">
+    <link rel="stylesheet" href="TermekGridwievJavitott.css">
+    <script src="sticky-header.js" defer></script>
+    <link rel="icon" type="image/png" href="Pictures/Icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <!------------------------------------------------------------------------------------------->
+    <title>Előzmények</title>
+</head>
+<nav>
+    <div class="topnav" id="topnav">
+        <a href="Index.html">Főoldal</a>
+        <a href="Profil.html">Profil</a>
+        <a href="Feltöltés.html">Feltöltés</a>
+        <a class="active" href="Elozmenyek.html">Előzmények</a>
+        <button class="kijelentkezes" id="belepes" name="belepes">Kijelentkezés</button>
+    </div>
+</nav>
+<body>
+    <div class="wrapper">
+        <div id="search-container">
+          <input
+            type="search"
+            id="search-input"
+            placeholder=""
+          />
+          <button id="search">Keresés</button>
+         <!---<input type="text" name="datefilter" value="">--->
+
+        </div>
+        <div id="buttons">
+          <button class="button-value" onclick="filterProduct('all')">Összes</button>
+          <button class="button-value" onclick="filterProduct('feltoltott')">
+            Feltöltött Autók
+          </button>
+          <button class="button-value" onclick="filterProduct('berelt')">
+           Bérelt Autók
+          </button>
+        </div>
+        <div id="products"></div>
+      </div>
+      <!-- Script -->
+      <script src="Elozmenyek.js"></script>
+
+      
+ 
+<!---<script type="text/javascript">
+$(function() {
+
+  $('input[name="datefilter"]').daterangepicker({
+      autoUpdateInput: false,
+      locale: {
+          cancelLabel: 'Clear'
+      }
+  });
+
+  $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
+  });
+
+  $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+      $(this).val('');
+  });
+
+});
+</script>-->
+    </body>
+</html>
