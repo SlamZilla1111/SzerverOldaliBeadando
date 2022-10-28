@@ -73,7 +73,7 @@
 
             <?php 
 
-                    if(isset($msg))
+                    if(isset($message))
                         {
                             echo "<lablel class='text-danger'>".$msg."</label>";
                         }
